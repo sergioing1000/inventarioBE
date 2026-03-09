@@ -202,13 +202,3 @@ Sergio Cruz
 Software Developer
 
 * * *
-
-💡 If you want, I can also generate a **much stronger README for portfolio quality**, including:
-
-*   architecture diagram
-*   Kubernetes manifests explanation
-*   CI/CD pipeline diagram
-*   API documentation section
-*   badges (Docker, Node, Kubernetes, CI)
-
-That kind of README **looks much more professional on GitHub**.
