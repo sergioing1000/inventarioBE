@@ -157,13 +157,21 @@ application/json
 inventarioBE
 
 │
+
 ├── Dockerfile
+
 ├── package.json
+
 ├── server.js
+
 ├── src/
+
 │   ├── controllers/
+
 │   ├── routes/
+
 │   └── services/
+
 │
 └── README.md
 
