@@ -14,20 +14,15 @@ This service is part of a microservices ecosystem:
 
 Client (Postman / Frontend)
 
-                │
+                    │
+                    ▼
+                Ingress
+                    │
+    ┌───────────────┬───────────────┬───────────────┐
+    │               │               │               │
+    ▼               ▼               ▼               ▼
+Inventario        Orders        Service         Sales Service
 
-                ▼
-             Ingress
-
-                │
-┌───────────────┬───────────────┬───────────────┐
-
-│               │               │               │
-▼               ▼               ▼               ▼
-
-Inventario�� Orders Service�� Sales Service
-
-Service
 
 The **Inventario** **service** is responsible for managing product stock and inventory information.
 
@@ -77,15 +72,11 @@ POST /api/inventario
 
 Example request body:
 
-{
-
-� "productId": "123",
-
-� "name": "Laptop",
-
-� "quantity": 10
-
-}
+    {
+        "productId": "123",
+        "name": "Laptop",
+        "quantity": 10
+    }
 
 * * *
 
@@ -166,23 +157,14 @@ application/json
 inventarioBE
 
 │
-
 ├── Dockerfile
-
 ├── package.json
-
 ├── server.js
-
 ├── src/
-
-│�� ├── controllers/
-
-│�� ├── routes/
-
-│�� └── services/
-
+│   ├── controllers/
+│   ├── routes/
+│   └── services/
 │
-
 └── README.md
 
 * * *
